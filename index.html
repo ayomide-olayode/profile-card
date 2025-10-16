@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/058557b36c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <article class="profile-card" data-testid="test-profile-card">
+      <div class="image-wrapper">
+  <figure class="image">
+    <img
+      src="ayomide.jpg"
+      alt="Ayomide"
+      class="profile-img"
+      data-testid="test-user-avatar"
+      id="avatarImage"
+    />
+  </figure>
+  <label for="avatarUpload" class="upload-label">Change Photo</label>
+  <input type="file" id="avatarUpload" accept="image/*" />
+  <input
+  type="url"
+  id="avatarURL"
+  placeholder="Or paste image URL"
+  class="url-input"
+/>
+
+</div>
+
+
+      <div class="text-data">
+        <h2 data-testid="test-user-name">Olayode Ayomide</h2>
+        <p data-testid="test-user-bio">
+          Frontend developer passionate about web accessibility and clean code.
+        </p>
+        <p>
+          Current time (ms):
+          <span id="userTime" data-testid="test-user-time"></span>
+        </p>
+      </div>
+
+      <nav
+        class="social"
+        aria-label="social links"
+        data-testid="test-user-social-links"
+      >
+        <h4>Follow me on social media</h4>
+        <ul>
+          <li>
+            <a
+              href="https://web.facebook.com/profile.php?id=61556186103802"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-facebook"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://github.com/ayomide-olayode"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-github"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ayomide-olayode-928317249/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-linkedin"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/_original_mide._/"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="test-user-social-instagram"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="about">
+        <h3>About Me</h3>
+        <div class="interest">
+          <section class="likes" data-testid="test-user-hobbies">
+            <h4>Likes</h4>
+            <ul>
+              <li>Coding</li>
+              <li>Volleyball</li>
+              <li>Music</li>
+            </ul>
+          </section>
+
+          <section class="dislikes" data-testid="test-user-dislikes">
+            <h4>Dislikes</h4>
+            <ul>
+              <li>Slow Internet</li>
+              <li>Messy code</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </article>
+
+    <script src="script.js"></script>
+  </body>
+</html>
